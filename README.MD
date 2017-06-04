@@ -1,7 +1,5 @@
 # DC Pattern Lib
 
-
-
 ## Usage
 
 Clone this project to your local machine. Run `npm install`. This should run `bower install` and `gulp build`. If, for some reason, those two commands fail to run, you should run them manually.
