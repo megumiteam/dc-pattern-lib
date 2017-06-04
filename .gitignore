@@ -1,0 +1,11 @@
+# Dependencies
+node_modules
+bower_components
+
+# Files
+npm-debug.log
+
+# /src files are built with gulp
+src
+
+
