@@ -43,6 +43,7 @@
     "gulp-sourcemaps": "^2.0.0-alpha",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
+    "http-server": "^0.10.0",
     "imagemin-pngquant": "^5.0.0",
     "jshint": "^2.9.1",
     "jshint-stylish-source": "^1.0.5",
