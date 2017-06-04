@@ -2,7 +2,7 @@
  * CONFIGURATION VARIABLES
  *
  */
-var devUrl = 'mercury.dev';
+var devUrl = 'dc-pattern-lib.dev';
 
 
 
@@ -347,6 +347,3 @@ gulp.task('default', sequence(
   'copy_fonts',
   'build_rev'
 ));
-
-
-
