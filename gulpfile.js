@@ -314,7 +314,10 @@ gulp.task('watch_reload', function(){ browsersync.reload(); });
  */
 gulp.task('serve', ['watch_bundle'], function(){
   browsersync({
-    proxy: devUrl
+    // proxy: devUrl,
+    server: {
+      baseDir: "./"
+    }
   });
 
   // Watch tasks

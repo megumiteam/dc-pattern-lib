@@ -1,21 +1,21 @@
 {
-  "name": "mercury",
-  "version": "1.1.0",
-  "description": "Simple HTML Boilerplate with Gulp & Browserify",
+  "name": "dc-pattern-lib",
+  "version": "1.0.0",
+  "description": "DigitalCube Pattern Library",
   "main": "gulpfile.js",
   "scripts": {
     "postinstall": "gulp "
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/j2made/mercury.git"
+    "url": "https://github.com/megumiteam/dc-pattern-lib.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/j2made/mercury/issues"
+    "url": "https://github.com/megumiteam/dc-pattern-lib/issues"
   },
-  "homepage": "https://github.com/j2made/mercury#readme",
+  "homepage": "https://github.com/megumiteam/dc-pattern-lib#readme",
   "devDependencies": {
     "babelify": "^7.2.0",
     "bourbon": "^4.2.6",
@@ -43,7 +43,6 @@
     "gulp-sourcemaps": "^2.0.0-alpha",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
-    "http-server": "^0.10.0",
     "imagemin-pngquant": "^5.0.0",
     "jshint": "^2.9.1",
     "jshint-stylish-source": "^1.0.5",
