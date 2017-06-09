@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js shifter" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -34,42 +34,32 @@
 
 <body>
 
-  <!-- Always shows a header, even in smaller screens. -->
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-color--primary">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">Title</span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation. We hide it in small screens. -->
-        <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-        </nav>
+  <header class="global-header" role="banner">
+    <div class="container-flex">
+      <div class="logo">
+        <a href="https://getshifter.io/">
+        <img width="130" height="auto" src="https://getshifter.io/app/themes/shifter/dist/images/shifter-logo--white.svg" alt="Shifter">
+      </a>
       </div>
-    </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Title</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+      <nav class="global-nav" role="navigation">
+        <div class="primary-nav">
+          <a class="menu-get-started" href="https://getshifter.io/get-started/">Get Started</a>
+          <a class="menu-pricing" href="https://getshifter.io/pricing/">Pricing</a>
+          <a class="menu-blog" href="https://getshifter.io/blog/">Blog</a>
+          <a class="menu-support" href="https://docs.getshifter.io/">Support</a>
+          <a class="menu-company" href="https://getshifter.io/company/">Company</a>
+        </div>
+        <div class="btn-group signup-links">
+          <a class="btn-outline--white" href="https://go.getshifter.io/">Login</a>
+          <a class="btn-outline--white" href="https://go.getshifter.io/#register">Sign up</a>
+        </div>
       </nav>
+      <a href="#" class="nav__toggle nav__open js__nav-toggle">
+      ☰
+    </a>
     </div>
-    <main class="mdl-layout__content">
-      <div class="page-content">
-        <!-- Your content goes here -->
-      </div>
-    </main>
-  </div>
 
-  <div class="mdl-typography--display-4">
-    DC Pattern Lib
-  </div>
+  </header>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>

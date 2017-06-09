@@ -1,0 +1,80 @@
+// Inputs: Range
+// --------------------
+
+.rangeslider,
+.rangeslider__fill {
+  display: block;
+}
+
+.rangeslider {
+  background-color: transparent;
+  border: 1px solid $black-light;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    width: 100%;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border: 1px solid $black-light;
+  }
+}
+
+.rangeslider--horizontal {
+  height: 20px;
+  width: 100%;
+}
+
+.rangeslider--disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+
+.rangeslider__fill {
+  @extend %purple-gradient;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    width: 100%;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border: 2px solid $white;
+  }
+}
+
+.rangeslider--horizontal .rangeslider__fill {
+  height: 100%;
+  top: 0;
+}
+
+.rangeslider--vertical .rangeslider__fill {
+  bottom: 0;
+  width: 100%;
+}
+
+.rangeslider__handle {
+  background: $magenta;
+  cursor: pointer;
+  color: $white;
+  display: table-cell;
+  padding-top: 14px;
+  font-size: 14px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  margin-left: -10px;
+}
+
+.rangeslider--horizontal .rangeslider__handle {
+  top: -12.5px;
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
+}

@@ -1,0 +1,121 @@
+// Global Footer Styles
+// --------------------
+
+.global-footer {
+  text-align: center;
+
+  @include media($medium) {
+    text-align: left;
+  }
+
+  .container-flex {
+    flex-wrap: wrap;
+
+    @include media($small) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .top {
+    padding-bottom: $space-xl;
+    padding-top: $space-lg;
+  }
+
+  .bottom {
+    padding: $space-md 0;
+
+    @include media($small) {
+      padding: 0;
+    }
+
+    .container-flex {
+      align-items: center;
+      height: 100px;
+    }
+  }
+}
+
+.global-footer__logo {
+  @include span-columns(12);
+  margin-bottom: $space-md;
+
+  @include media($medium) {
+    @include span-columns(2);
+    margin-bottom: 0;
+  }
+}
+
+.global-footer__links {
+  margin-bottom: $space-md;
+
+  @include media($medium) {
+    @include span-columns(2);
+    margin-bottom: 0;
+  }
+
+  &.secondary {
+    margin-bottom: $space-md;
+
+    @include media($medium) {
+      @include span-columns(2);
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    display: block;
+    margin-bottom: $space-xs;
+  }
+}
+
+.global-footer__contact {
+  margin-bottom: $space-md;
+
+  @include media($medium) {
+    @include span-columns(2);
+    @include shift(1.5);
+    margin-bottom: 0;
+  }
+
+  .contact-item {
+    margin-bottom: $space-sm;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.global-footer__signup {
+
+  @include media($medium) {
+    @include span-columns(1.5);
+    @include shift(1);
+  }
+}
+
+.global-footer__copyright {
+  width: 100%;
+
+  @include media($small) {
+    width: auto;
+    margin-right: auto;
+  }
+}
+
+.global-footer__social {
+  width: 100%;
+
+  @include media($small) {
+    width: auto;
+  }
+
+  a {
+    display: inline-block;
+    margin-right: $space-xs;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// Get Started: FAQs
+// --------------------
+
+.faqs {
+
+  @include media($medium) {
+    @include center-column(10);
+  }
+}
+
+.faqs__list {
+  .accordion__title {
+    padding: $space-lg $space-md;
+  }
+
+  .accordion__content {
+    padding: 0 $space-md $space-lg;
+  }
+}
