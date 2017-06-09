@@ -20,7 +20,8 @@ $purple: $brand-color;
 $magenta: #f80759;
 
 %purple-gradient {
-  @include linear-gradient(to right, $purple, $magenta);
+  background-color: $purple;
+  background-image: linear-gradient(90deg, $purple, $magenta);
 }
 
 // COLOR LISTS FOR UTILITY CLASSES - see `sass/global/_utility-classes.scss

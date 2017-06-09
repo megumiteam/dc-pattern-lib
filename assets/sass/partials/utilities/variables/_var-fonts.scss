@@ -16,12 +16,12 @@ $base-font-family:  $sans;
 $em-base: 18px !default;
 $base-font-size: 18px;
 $base-mobile-font-size: 18px;
-$base-font-size-rem: rem(18);
+$base-font-size-rem: 18px;
 
 // Line Height
 // =============================================================================
 
 $base-line-height: 1.5;
 $base-spacing: $base-line-height * 1em;
-$body-line-height: golden-ratio(1em, 1);
+$body-line-height: modular-scale($golden, 1);
 $header-line-height: 1.25;

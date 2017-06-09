@@ -27,8 +27,6 @@ html {
 }
 
 body {
-  @include font-feature-settings('kern', 'liga');
-  text-rendering: optimizeLegibility;
   background-color: $base-background-color;
   color: $base-font-color;
   font-family: $base-font-family;

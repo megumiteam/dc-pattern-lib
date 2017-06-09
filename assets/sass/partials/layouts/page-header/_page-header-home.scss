@@ -1,5 +1,5 @@
 .shifter-animation {
-  @include purple-gradient();
+  @extend %purple-gradient;
   height: 100vh;
   height: calc(100vh - 100px);
 

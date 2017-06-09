@@ -41,7 +41,7 @@
 }
 
 @mixin img-responsive() {
-  @include image-rendering(optimizeSpeed);
+  image-rendering: optimizeSpeed;
   display: block;
   height: auto;
   max-width: 100%;
@@ -84,10 +84,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@mixin purple-gradient {
-  background-image: linear-gradient(90deg, $purple, $magenta);
 }
 
 // BUTTONS

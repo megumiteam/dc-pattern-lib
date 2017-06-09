@@ -45,71 +45,71 @@ strong {
 // Sans Serif
 .yuge-sans {
   font-family: $sans;
-  font-size: rem(90);
+  font-size: 90px;
   line-height: 1.07;
 }
 
 .xxl-sans {
   font-family: $sans;
-  font-size: rem(68);
+  font-size: 68px;
   line-height: 1.14;
 }
 
 .xl-sans {
   font-family: $sans;
-  font-size: rem(32);
+  font-size: 32px;
   font-weight: 600;
   line-height: 1.18;
 
   @include media($small) {
-    font-size: rem(46);
+    font-size: 46px;
   }
 
   @include media($medium) {
-    font-size: rem(60);
+    font-size: 60px;
     line-height: 1.2;
   }
 }
 
 .lg-sans {
   font-family: $sans;
-  font-size: rem(25);
+  font-size: 25px;
   font-weight: 600;
   line-height: 1.36;
 
   @include media($small) {
-    font-size: rem(30);
+    font-size: 30px;
   }
 }
 
 .md-sans {
   font-family: $sans;
-  font-size: rem(20);
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.36;
 
   @include media($small) {
-    font-size: rem(25);
+    font-size: 25px;
   }
 }
 
 .sm-sans {
   font-family: $sans;
-  font-size: rem(18);
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.3;
 }
 
 .xs-sans {
   font-family: $sans;
-  font-size: rem(14);
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
 }
 
 // Helpers
 .sm-caps {
-  letter-spacing: rem(.5);
+  letter-spacing: .5px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -128,7 +128,7 @@ strong {
 // =============================================================================
 
 .accordion__item {
-  margin-bottom: rem(2);
+  margin-bottom: 2px;
 
   .accordion__title {
     padding: $space-md 0;
