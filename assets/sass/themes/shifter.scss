@@ -1,6 +1,9 @@
 // Shifter
 
-.logo--icon {
-  height: 40px;
-  width: auto;
+html.shifter {
+
+  .global-header__logo {
+    width: 40px;
+    height: auto;
+  }
 }

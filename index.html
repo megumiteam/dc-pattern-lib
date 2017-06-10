@@ -27,31 +27,37 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- prisim.js -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism-okaidia.min.css">
+
   <!-- build:css -->
   <link rel="stylesheet" href="./src/css/main.min.css">
   <!-- endbuild -->
+
 </head>
 
 <body>
 
-  <header class="global-header" role="banner">
+  <header class="global-header _purple-gradient" role="banner">
     <div class="container-flex">
-      <div class="logo">
-        <a href="https://getshifter.io/">
-        <img width="130" height="auto" src="https://getshifter.io/app/themes/shifter/dist/images/shifter-logo--white.svg" alt="Shifter">
-      </a>
+      <div class="global-header__logo">
+        <a href="#">
+          <svg id="shifter-logomark" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.37 115.36"><defs><style>.cls-1{fill:#fff;}</style></defs><title>shifter-logomark</title><path class="cls-1" d="M51.86,78.9H34.15V30H51.86ZM64.55,30V57L90.37,30ZM43,115.36A28.24,28.24,0,0,0,71.23,87.09H14.78A28.24,28.24,0,0,0,43,115.36ZM22.68,46.54A9.48,9.48,0,1,0,13.2,56,9.48,9.48,0,0,0,22.68,46.54ZM26.4,0H0V26.44H26.4Z"/></svg>
+        </a>
       </div>
       <nav class="global-nav" role="navigation">
         <div class="primary-nav">
-          <a class="menu-get-started" href="https://getshifter.io/get-started/">Get Started</a>
-          <a class="menu-pricing" href="https://getshifter.io/pricing/">Pricing</a>
-          <a class="menu-blog" href="https://getshifter.io/blog/">Blog</a>
-          <a class="menu-support" href="https://docs.getshifter.io/">Support</a>
-          <a class="menu-company" href="https://getshifter.io/company/">Company</a>
+          <a class="white menu-get-started" href="https://getshifter.io/get-started/">Get Started</a>
+          <a class="white menu-pricing" href="https://getshifter.io/pricing/">Pricing</a>
+          <a class="white menu-blog" href="https://getshifter.io/blog/">Blog</a>
+          <a class="white menu-support" href="https://docs.getshifter.io/">Support</a>
+          <a class="white menu-company" href="https://getshifter.io/company/">Company</a>
         </div>
-        <div class="btn-group signup-links">
+        <div class="btn-group">
           <a class="btn-outline--white" href="https://go.getshifter.io/">Login</a>
-          <a class="btn-outline--white" href="https://go.getshifter.io/#register">Sign up</a>
+          <a class="btn-solid--white" href="https://go.getshifter.io/#register">Sign up</a>
         </div>
       </nav>
       <a href="#" class="nav__toggle nav__open js__nav-toggle">
@@ -61,6 +67,10 @@
 
   </header>
 
+  <div class="container">
+    <pre><code class="language-javascript">Console.log('Prisim.js')</code></pre>
+  </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="dist/jquery.min.js"><\/script>')
@@ -69,6 +79,9 @@
   <!-- build:js -->
   <script src="./src/js/bundle.js"></script>
   <!-- endbuild -->
+
+  <!-- prisim.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
 
 </body>
 

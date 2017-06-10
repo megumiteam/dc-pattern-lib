@@ -15,6 +15,16 @@
   padding: $space-sm $space-md;
 }
 
+%btn-solid {
+  @include btn-reset();
+  @extend .xs-sans;
+  @extend .sm-caps;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  padding: $space-sm $space-md;
+}
+
 .btn-link {
   @extend .btn;
   @extend .sm-caps;
@@ -60,6 +70,21 @@
 .btn-outline--purple-sm {
   @extend .btn-outline--purple;
   padding: $space-xs $space-sm;
+}
+
+.btn-solid--white {
+  @extend %btn-solid;
+  background-color: $white;
+  border-color: $white;
+  color: $magenta;
+  padding: $space-sm $space-md;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    border-color: $white;
+    color: $magenta;
+  }
 }
 
 .btn-group {

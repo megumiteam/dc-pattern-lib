@@ -19,10 +19,6 @@ $brand-color: #bc4e9c;
 $purple: $brand-color;
 $magenta: #f80759;
 
-%purple-gradient {
-  background-color: $purple;
-  background-image: linear-gradient(90deg, $purple, $magenta);
-}
 
 // COLOR LISTS FOR UTILITY CLASSES - see `sass/global/_utility-classes.scss
 // Array format: 'class-base': $color-var, where `class-base' would output as
@@ -39,6 +35,18 @@ $color-styles: (
   'magenta': $magenta,
   'purple': $purple
 );
+
+%purple-gradient {
+  background-color: $purple;
+  background-image: linear-gradient(90deg, $purple, $magenta);
+}
+
+// GRADIENT SCHEMES
+// =============================================================================
+
+._purple-gradient {
+  @extend %purple-gradient;
+}
 
 
 // ELEMENT COLORS
