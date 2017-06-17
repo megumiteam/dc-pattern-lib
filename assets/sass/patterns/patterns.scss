@@ -1,0 +1,18 @@
+.patterns {
+  @extend .container-fluid;
+}
+
+.pattern--item {
+  @extend .row;
+  padding: $space-lg 0;
+}
+
+.pattern--code {
+  margin-top: $space-lg;
+}
+
+pre > code {
+    white-space: pre;
+    margin-top: -1.00em;
+    display: block;
+}

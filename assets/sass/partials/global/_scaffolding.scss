@@ -8,8 +8,8 @@
 
 .container {
   @include outer-container(100%);
-  margin-right: $gutter;
   margin-left: $gutter;
+  margin-right: $gutter;
 
   @include media($large) {
     @include base-container();
@@ -19,8 +19,8 @@
 .container-flex {
   @include outer-container(100%);
   display: flex;
-  margin-right: $gutter;
   margin-left: $gutter;
+  margin-right: $gutter;
 
   @include media($large) {
     @include base-container();
