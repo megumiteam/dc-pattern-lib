@@ -7,6 +7,14 @@
 @import '../../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss';
 @import '../../../node_modules/bourbon-neat/app/assets/stylesheets/neat.scss';
 
-@import '../partials/partials';
 @import '../themes/shifter.scss';
+@import '../variables/variables';
+@import '../partials/partials';
 @import '../patterns/patterns';
+
+// TODO: Move these styles
+.layout--dashboard {
+  .main {
+    margin-top: $space-lg;
+  }
+}

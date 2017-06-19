@@ -1,0 +1,19 @@
+// Panels
+// -------------
+
+@import 'vars';
+
+.panel {
+  background-color: $panel-background-color;
+  border-radius: $panel-border-radius;
+}
+
+.panel__header {
+  background-color: $panel-header-background-color;
+  padding: $panel-header-padding;
+  border-radius: $panel-border-radius $panel-border-radius 0 0;
+}
+
+.panel__content {
+  padding: $panel-content-padding;
+}

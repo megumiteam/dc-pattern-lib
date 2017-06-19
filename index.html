@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js shifter" lang="en">
+<html class="no-js shifter layout--dashboard" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -48,15 +48,9 @@
       </div>
       <nav class="global-nav" role="navigation">
         <div class="primary-nav">
-          <a class="white menu-get-started" href="#">Get Started</a>
-          <a class="white menu-pricing" href="#">Pricing</a>
-          <a class="white menu-blog" href="https://getshifter.io/blog/">Blog</a>
+          <a class="white menu-get-started" href="#">Overview</a>
+          <a class="white menu-pricing" href="#">Billing</a>
           <a class="white menu-support" href="https://docs.getshifter.io/">Support</a>
-          <a class="white menu-company" href="https://getshifter.io/company/">Company</a>
-        </div>
-        <div class="btn-group">
-          <a class="btn-outline--white" href="https://go.getshifter.io/">Login</a>
-          <a class="btn-solid--white" href="https://go.getshifter.io/#register">Sign up</a>
         </div>
       </nav>
       <a href="#" class="nav__toggle nav__open js__nav-toggle">
@@ -65,13 +59,29 @@
     </div>
   </header>
 
-  <div class="container">
-    <div class="patterns">
-      <div class="pattern--item">
+  <main class="main container">
+    <section class="patterns">
+      <pattern class="patterns__item">
+        <article class="panel">
+          <header class="panel__header">
+            $panel-header
+          </header>
+          <div class="panel__content">
+            $panel-content
+          </div>
+        </article>
+      </pattern>
+      <pattern class="patterns__item">
         <a href="#" class="btn-outline--purple">Button Outline Purple</a>
-      </div>
-    </div>
-  </div>
+      </pattern>
+      <pattern class="patterns__item">
+        <div class="btn-group">
+          <a class="btn-outline--purple" href="https://go.getshifter.io/">Login</a>
+          <a class="btn-solid--purple" href="https://go.getshifter.io/#register">Sign up</a>
+        </div>
+      </pattern>
+    </section>
+  </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>

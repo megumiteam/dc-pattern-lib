@@ -2,12 +2,16 @@
   @extend .container-fluid;
 }
 
-.pattern--item {
+.patterns__item {
   @extend .row;
   padding: $space-lg 0;
   border-radius: 5px;
 }
 
+.patterns__code {
+  margin-top: $space-md;
+}
+
 pre {
-  border-radius: 5px;
+  border-radius: $border-radius; // TODO: move pre to common/general styles
 }

@@ -21,10 +21,10 @@ module.exports = function() {
       });
     }
 
-    var codeWrapOpen = '<div class="pattern__code-example"><pre><code class="language-markup">';
+    var codeWrapOpen = '<div class="patterns__code"><pre><code class="language-markup">';
     var codeWrapClose = '</code></pre></div>';
 
-    $('.pattern--item').each(function(index) {
+    $('.patterns__item').each(function(index) {
       var $this = $(this);
       var content = codeWrapOpen;
       content += escapeHtml($this.html());

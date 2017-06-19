@@ -9,6 +9,8 @@
   @include btn-reset();
   @extend .xs-sans;
   @extend .sm-caps;
+  min-width: 100px;
+  text-align: center;
   border-radius: 5px;
   border-style: solid;
   border-width: 2px;
@@ -19,6 +21,8 @@
   @include btn-reset();
   @extend .xs-sans;
   @extend .sm-caps;
+  min-width: 100px;
+  text-align: center;
   border-radius: 5px;
   border-style: solid;
   border-width: 2px;
@@ -42,7 +46,6 @@
   background-color: transparent;
   border-color: $white;
   color: $white;
-  padding: $space-sm $space-md;
 
   &:hover,
   &:focus {
@@ -57,7 +60,6 @@
   background-color: transparent;
   border-color: $purple;
   color: $purple;
-  padding: $space-sm $space-md;
 
   &:hover,
   &:focus {
@@ -84,6 +86,20 @@
     background-color: $white;
     border-color: $white;
     color: $magenta;
+  }
+}
+
+.btn-solid--purple {
+  @extend %btn-solid;
+  background-color: $purple;
+  border-color: $purple;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: $purple;
+    border-color: $purple;
+    color: $white;
   }
 }
 
