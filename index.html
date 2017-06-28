@@ -64,14 +64,10 @@
   <main class="main container">
 
     <aside class="sidebar" role="complementary">
-      <article class="panel">
-        <header class="panel__header">
-          $panel-header
-        </header>
-        <div class="panel__content">
-          $panel-content
-        </div>
-      </article>
+      <nav class="nav dashboard-nav">
+        <a class="nav__item" href="#">Overview</a>
+        <a class="nav__item" href="#">Workflow</a>
+      </nav>
     </aside>
 
     <section class="main-content">
@@ -79,7 +75,7 @@
 
         <pattern>
           <article class="panel">
-            <header class="panel__header">
+            <header class="panel__header sr-only">
               Overview
             </header>
             <div class="panel__content">
@@ -100,6 +96,59 @@
                     </div>
                   </div>
                 </article>
+              </section>
+            </div>
+          </article>
+          <article class="panel">
+            <header class="panel__header">
+              Workflow
+            </header>
+            <div class="panel__content">
+              <section class="panel__list panel__list--timeline">
+                <article class="panel__item">
+                  <div class="panel__content--left">
+                    <div class="xs-sans">
+                      June 8, 3:25 pm
+                    </div>
+                    <div class="sm-sans">
+                      Deploy to Production
+                    </div>
+                  </div>
+                  <div class="panel__content--right">
+                    <div class="md-sans">
+                      <a class="btn--sm btn-outline--purple" href="#">View Site</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="panel__item">
+                  <div class="panel__content--left">
+                    <div class="xs-sans">
+                      June 3, 1:48 pm
+                    </div>
+                    <div class="sm-sans">
+                      Generated Artifact
+                    </div>
+                  </div>
+                  <div class="panel__content--right">
+                    <a class="btn--sm btn-outline--purple" href="#">View Artifacts</a>
+                  </div>
+                </article>
+                <article class="panel__item">
+                  <div class="panel__content--left">
+                    <div class="xs-sans">
+                      June 1, 4:37 pm
+                    </div>
+                    <div class="sm-sans">
+                      Generate Fail
+                    </div>
+                  </div>
+                  <div class="panel__content--right">
+                    <a class="btn--sm btn-outline--purple" href="#">View Log</a>
+                  </div>
+                </article>
+                <div class="panel__viewmore">
+                  <a href="#" class="btn--sm btn-solid--purple">View More</a>
+                </div>
               </section>
             </div>
           </article>

@@ -7,6 +7,10 @@
   background-color: $panel-background-color;
   border-radius: $panel-border-radius;
   overflow: hidden;
+
+  + .panel {
+    margin-top: $panel-gutter-spacing;
+  }
 }
 
 .panel__header {
@@ -23,7 +27,7 @@
 .panel__item {
   display: flex;
   flex-direction: column;
-  padding-bottom: $space-md;
+  margin-bottom: $space-md;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -72,18 +76,20 @@
     }
 
     &:before {
-      height: 150%;
+      height: 500%;
       content: '';
-      width: 3px;
+      width: 2px;
       display: block;
       position: absolute;
-      left: 4px;
+      left: 5px;
       top: 50%;
-      background-color: $black;
+      bottom: 0;
+      background-color: $purple;
     }
   }
 
   .panel__viewmore {
     margin-left: $space-lg;
+    margin-top: $space-md;
   }
 }
