@@ -44,7 +44,23 @@
 
     @include media($medium) {
       @include span-columns(4);
-      @include shift(1);
+    }
+  }
+}
+
+// Sidebar
+.sidebar-left {
+  .main-content {
+
+    @include media($medium) {
+      @include span-columns(8);
+    }
+  }
+
+  .sidebar {
+
+    @include media($medium) {
+      @include span-columns(4);
     }
   }
 }

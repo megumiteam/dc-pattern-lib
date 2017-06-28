@@ -1,36 +1,43 @@
 // Button Styles
 // -------------
 
-.btn {
-  @include btn-reset();
+// Sizes
+
+// Default Size
+.btn--sm {
+  padding: $space-xs $space-sm;
+  @extend .xxs-sans;
 }
+
+.btn,
+.btn--md {
+  padding: $space-sm $space-md;
+  @extend .xs-sans;
+}
+
 
 %btn-outline {
   @include btn-reset();
-  @extend .xs-sans;
   @extend .sm-caps;
   min-width: 100px;
   text-align: center;
   border-radius: 5px;
   border-style: solid;
   border-width: 2px;
-  padding: $space-sm $space-md;
 }
 
 %btn-solid {
   @include btn-reset();
-  @extend .xs-sans;
   @extend .sm-caps;
   min-width: 100px;
   text-align: center;
   border-radius: 5px;
   border-style: solid;
   border-width: 2px;
-  padding: $space-sm $space-md;
 }
 
 .btn-link {
-  @extend .btn;
+  @include btn-reset();
   @extend .sm-caps;
   @extend .xs-sans;
   position: relative;

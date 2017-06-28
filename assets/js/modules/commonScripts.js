@@ -24,7 +24,7 @@ module.exports = function() {
     var codeWrapOpen = '<div class="patterns__code"><pre><code class="language-markup">';
     var codeWrapClose = '</code></pre></div>';
 
-    $('.patterns__item').each(function(index) {
+    $('.patterns').find('> pattern').each(function(index) {
       var $this = $(this);
       var content = codeWrapOpen;
       content += escapeHtml($this.html());

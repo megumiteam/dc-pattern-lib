@@ -14,7 +14,21 @@
 
 // TODO: Move these styles
 .layout--dashboard {
-  .main {
+  main {
     margin-top: $space-lg;
+  }
+}
+
+.account-avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  border-color: $white;
+  border-width: 2px;
+  border-style: solid;
+  background-color: $white;
+
+  img {
+    width: 50px;
+    height: 50px;
   }
 }

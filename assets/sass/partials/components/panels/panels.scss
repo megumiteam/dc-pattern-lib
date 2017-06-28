@@ -6,14 +6,84 @@
 .panel {
   background-color: $panel-background-color;
   border-radius: $panel-border-radius;
+  overflow: hidden;
 }
 
 .panel__header {
   background-color: $panel-header-background-color;
   padding: $panel-header-padding;
   border-radius: $panel-border-radius $panel-border-radius 0 0;
+  color: $panel-header-color;
 }
 
 .panel__content {
   padding: $panel-content-padding;
+}
+
+.panel__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $space-md;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include media($small) {
+    flex-direction: row;
+  }
+}
+
+.panel__content--left {
+  margin-right: auto;
+
+  @include media($small) {
+    margin-right: auto;
+    flex: 1;
+  }
+}
+
+.panel__content--right {
+  flex: 1;
+  margin-top: $space-sm;
+
+  @include media($small) {
+    margin-top: 0;
+    text-align: right;
+  }
+}
+
+.panel__list--timeline {
+  .panel__item {
+    padding-left: $space-lg;
+    position: relative;
+
+    &:after {
+      background-color: $purple;
+      border-radius: 50%;
+      height: 12px;
+      width: 12px;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 50%;
+      margin-top: -5px;
+      content: '';
+    }
+
+    &:before {
+      height: 150%;
+      content: '';
+      width: 3px;
+      display: block;
+      position: absolute;
+      left: 4px;
+      top: 50%;
+      background-color: $black;
+    }
+  }
+
+  .panel__viewmore {
+    margin-left: $space-lg;
+  }
 }

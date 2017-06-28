@@ -1,11 +1,16 @@
 .patterns {
   @extend .container-fluid;
-}
 
-.patterns__item {
-  @extend .row;
-  padding: $space-lg 0;
-  border-radius: 5px;
+  > pattern {
+    @extend .row;
+    margin-top: $space-lg;
+    margin-bottom: $space-lg;
+    border-radius: 5px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
 }
 
 .patterns__code {
