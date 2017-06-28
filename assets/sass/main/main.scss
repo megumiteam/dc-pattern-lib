@@ -9,10 +9,11 @@
 @import '../../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss';
 @import '../../../node_modules/bourbon-neat/app/assets/stylesheets/neat.scss';
 
-// Themes
-@import '../themes/shifter.scss';
-
 // Main
 @import '../variables/variables';
 @import '../partials/partials';
 @import '../patterns/patterns';
+
+// Themes
+@import '../themes/shifter.scss';
+@import '../themes/amimoto.scss';

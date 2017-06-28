@@ -1,12 +1,12 @@
-// Shifter
+// AMIMOTO
 
-html.theme--shifter {
+html.theme--amimoto {
   .global-header__logo {
     width: 40px;
     height: auto;
   }
 
   .global-header {
-    @extend ._purple-gradient;
+    background-color: $black-80;
   }
 }
