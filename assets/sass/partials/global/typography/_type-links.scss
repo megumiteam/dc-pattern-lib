@@ -4,11 +4,9 @@
 a {
   @include standard-trans();
   color: $base-link-color;
-  text-decoration: none;
 
   &:hover {
     color: $hover-link-color;
-    text-decoration: none;
   }
 
   &:active,

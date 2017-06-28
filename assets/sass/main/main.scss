@@ -3,42 +3,16 @@
 
 @charset 'UTF-8';
 
+
+// Vendor
 @import '../../../node_modules/sanitize.css/sanitize';
 @import '../../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss';
 @import '../../../node_modules/bourbon-neat/app/assets/stylesheets/neat.scss';
 
+// Themes
 @import '../themes/shifter.scss';
+
+// Main
 @import '../variables/variables';
 @import '../partials/partials';
 @import '../patterns/patterns';
-
-// TODO: Move these styles
-.layout--dashboard {
-  main {
-    margin-top: $space-lg;
-  }
-}
-
-.account-avatar {
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: $white;
-  box-sizing: 1px 1px 1px black;
-
-  img {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-
-// Nav
-.dashboard-nav {
-  border-radius: 4px;
-  overflow: hidden;
-
-  .nav__item {
-    display: block;
-    background: $black-10;
-  }
-}

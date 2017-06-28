@@ -1,8 +1,9 @@
 // Base: Layouts
 // -------------
 
-@import 'page-header/base';        // Page-Header styles: global, specific
-@import 'pages/base';              // Page Related Styles: global, specific
-@import 'single/base';            // Sidebar Styles, global, specific
-@import 'archives/base';           // Archive Styles, global, specific
-@import 'sidebar/base';            // Sidebar Styles, global, specific
+@import 'page-header/base';
+@import 'pages/base';
+@import 'single/base';
+@import 'archives/base';
+@import 'sidebar/base';
+@import 'dashboard/dashboard';

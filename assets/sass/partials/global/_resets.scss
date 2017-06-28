@@ -8,3 +8,13 @@ figure {
 button {
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}

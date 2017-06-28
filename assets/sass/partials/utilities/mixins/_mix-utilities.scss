@@ -6,7 +6,7 @@
 // =============================================================================
 
 @mixin standard-trans() {
-  transition: all .35s ease-in-out;
+  transition: all .1s ease-in-out;
 }
 
 @mixin long-trans() {
@@ -48,34 +48,6 @@
   width: 100% \9;
   width: 100%;
 }
-
-// SPACING (SPACING VARS IN VARIABLES/_VAR-UTILITIES)
-// =============================================================================
-
-@mixin space-before-sm() {
-  margin-top: $space-sm; }
-
-@mixin space-after-sm() {
-  margin-bottom: $space-sm; }
-
-@mixin space-before-md() {
-  margin-top: $space-md; }
-
-@mixin space-after-md() {
-  margin-bottom: $space-md; }
-
-@mixin space-before-lg() {
-  margin-top: $space-lg; }
-
-@mixin space-after-lg() {
-  margin-bottom: $space-lg; }
-
-@mixin space-before-xl() {
-  margin-top: $space-xl; }
-
-@mixin space-after-xl() {
-  margin-bottom: $space-xl; }
-
 
 // CSS3 EXTENDS
 // =============================================================================

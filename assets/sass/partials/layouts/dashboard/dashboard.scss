@@ -1,0 +1,38 @@
+// Dashboard
+
+.layout--dashboard {
+  main {
+    margin-top: $space-lg;
+  }
+}
+
+// Nav
+.dashboard-nav {
+  border-radius: $border-radius;
+  overflow: hidden;
+  margin-bottom: $gutter;
+
+  @include media($small) {
+    margin-bottom: 0;
+  }
+
+  .nav__item {
+    @include standard-trans();
+    display: block;
+    background: $black-10;
+    padding: $space-sm $space-md;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $base-font-color;
+
+    &:hover {
+      background-color: $black-05;
+    }
+  }
+
+  .nav__icon ~ span {
+    margin-left: $space-sm;
+  }
+}
