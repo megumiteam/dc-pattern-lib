@@ -8,11 +8,12 @@ input[type=textarea],
 textarea {
    background-color: $white;
    border-radius: 5px;
-   padding: 16px;
+   padding: $space-sm;
    width: 100%;
+   border: 2px solid transparent;
 }
 
 ::-webkit-input-placeholder {
-  @extend .sm-caps;
+  // @extend .sm-caps;
   @extend .xs-sans;
 }

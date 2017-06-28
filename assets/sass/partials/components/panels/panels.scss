@@ -18,10 +18,13 @@
   padding: $panel-header-padding;
   border-radius: $panel-border-radius $panel-border-radius 0 0;
   color: $panel-header-color;
+  font-size: 16px;
 }
 
 .panel__content {
   padding: $panel-content-padding;
+  display: flex;
+  align-items: flex-start;
 }
 
 .panel__item {
@@ -40,21 +43,25 @@
 
 .panel__content--left {
   margin-right: auto;
+  flex: .8;
 
   @include media($small) {
     margin-right: auto;
-    flex: 1;
+    flex: .8;
   }
 }
 
 .panel__content--right {
-  flex: 1;
   margin-top: $space-sm;
 
   @include media($small) {
     margin-top: 0;
     text-align: right;
   }
+}
+
+.panel__list {
+  flex: 1;
 }
 
 .panel__list--timeline {
@@ -89,6 +96,7 @@
   }
 
   .panel__viewmore {
+    @include standard-trans;
     margin-left: $space-lg;
     margin-top: $space-md;
   }

@@ -26,6 +26,7 @@
   <link rel="canonical" href="http://www.example.com/">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <!-- build:css -->
@@ -68,8 +69,9 @@
         <a class="nav__item dashboard-nav__toggle" href="#"><i class="nav__icon material-icons">home</i> <span>Toggle</span></a>
         <div class="dashboard-nav__items">
           <a class="nav__item" href="#"><i class="nav__icon material-icons">home</i> <span>Overview</span></a>
-          <a class="nav__item" href="#"><i class="nav__icon material-icons">history</i> <span>Workflow</span></a>
+          <a class="nav__item" href="#"><i class="nav__icon material-icons">history</i> <span>Generate</span></a>
           <a class="nav__item" href="#"><i class="nav__icon material-icons">important_devices</i> <span>Deploy</span></a>
+          <a class="nav__item" href="#"><i class="nav__icon material-icons">history</i> <span>Workflow</span></a>
           <a class="nav__item" href="#"><i class="nav__icon material-icons">message</i> <span>Messages</span></a>
           <a class="nav__item" href="#"><i class="nav__icon material-icons">domain</i> <span>Domains</span></a>
           <a class="nav__item" href="#"><i class="nav__icon material-icons">library_add</i> <span>Integrations</span></a>
@@ -82,6 +84,8 @@
       <section class="patterns">
 
         <pattern>
+
+          <!-- Overview -->
           <article class="panel">
             <header class="panel__header sr-only">
               Overview
@@ -94,12 +98,12 @@
                       Sample Site Title
                     </div>
                     <div class="xs-sans">
-                      <a href="#">example.com</a>
+                      Stopped
                     </div>
                   </div>
                   <div class="panel__content--right">
                     <div class="md-sans">
-                      <a class="btn--sm btn-outline--purple" href="#">Admin</a>
+                      <a class="btn--sm btn-outline--purple" href="#">Launch Admin</a>
                       <a class="btn--sm btn-solid--purple" href="#">View Site</a>
                     </div>
                   </div>
@@ -107,55 +111,128 @@
               </section>
             </div>
           </article>
+
+          <!-- Generate -->
           <article class="panel">
             <header class="panel__header">
-              Workflow
+              Generate New Artifact
             </header>
             <div class="panel__content">
-              <section class="panel__list panel__list--timeline">
+              <div class="panel__content--left">
+                <form id="artifact_name" action="index.html" method="post">
+                  <input required type="text" name="" value="" placeholder="Artifact Title">
+                </form>
+              </div>
+              <div class="panel__content--right">
+                <div class="md-sans">
+                  <input class="btn--sm btn-outline--purple" type="submit" value="Generate" form="artifact_name" />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Deploy -->
+          <article class="panel">
+            <header class="panel__header">
+              Deploy to Environment
+            </header>
+            <div class="panel__content">
+              <section class="panel__list">
                 <article class="panel__item">
                   <div class="panel__content--left">
                     <div class="xs-sans">
-                      June 8, 3:25 pm
+                      Development
                     </div>
                     <div class="sm-sans">
-                      Deploy to Production
+                      <a href="#">https://jovial-chandrasekhar7435.on.getshifter.io</a>
                     </div>
                   </div>
                   <div class="panel__content--right">
                     <div class="md-sans">
-                      <a class="btn--sm btn-outline--purple" href="#">View Site</a>
+                      <a class="btn--sm btn-outline--purple" href="#">Select New</a>
                     </div>
                   </div>
                 </article>
                 <article class="panel__item">
                   <div class="panel__content--left">
                     <div class="xs-sans">
+                      Staging
+                    </div>
+                    <div class="sm-sans">
+                      <a href="#">https://staging.example.com</a>
+                    </div>
+                  </div>
+                  <div class="panel__content--right">
+                    <a class="btn--sm btn-outline--purple" href="#">Select New</a>
+                  </div>
+                </article>
+                <article class="panel__item panel__item--warning">
+                  <div class="panel__content--left">
+                    <div class="xs-sans">
+                      Production
+                    </div>
+                    <div class="sm-sans">
+                      <a href="#">https://example.com</a>
+                    </div>
+                  </div>
+                  <div class="panel__content--right">
+                    <a class="btn--sm btn-outline--purple" href="#">Select New</a>
+                  </div>
+                </article>
+              </section>
+            </div>
+          </article>
+
+          <!-- Workflow -->
+          <article class="panel">
+            <header class="panel__header">
+              Workflow
+            </header>
+            <div class="panel__content _black-80 white">
+              <section class="panel__list panel__list--timeline">
+                <article class="panel__item">
+                  <div class="panel__content--left">
+                    <div class="xs-sans mono">
+                      June 8, 3:25 pm
+                    </div>
+                    <div class="sm-sans mono">
+                      <b>Deploy to Production</b>
+                    </div>
+                  </div>
+                  <div class="panel__content--right">
+                    <div class="md-sans">
+                      <a class="btn--sm btn-solid--purple" href="#">View Site</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="panel__item">
+                  <div class="panel__content--left">
+                    <div class="xs-sans mono">
                       June 3, 1:48 pm
                     </div>
-                    <div class="sm-sans">
-                      Generated Artifact
+                    <div class="sm-sans mono">
+                      <b>Generated Artifact</b>
                     </div>
                   </div>
                   <div class="panel__content--right">
-                    <a class="btn--sm btn-outline--purple" href="#">View Artifacts</a>
+                    <a class="btn--sm btn-solid--purple" href="#">View Artifacts</a>
                   </div>
                 </article>
-                <article class="panel__item">
+                <article class="panel__item panel__item--warning">
                   <div class="panel__content--left">
-                    <div class="xs-sans">
+                    <div class="xs-sans mono">
                       June 1, 4:37 pm
                     </div>
-                    <div class="sm-sans">
-                      Generate Fail
+                    <div class="sm-sans mono">
+                      <b>Generate Fail</b>
                     </div>
                   </div>
                   <div class="panel__content--right">
-                    <a class="btn--sm btn-outline--purple" href="#">View Log</a>
+                    <a class="btn--sm btn-solid--purple" href="#">View Log</a>
                   </div>
                 </article>
                 <div class="panel__viewmore">
-                  <a href="#" class="btn--sm btn-solid--purple">View More</a>
+                  <a href="#" class="btn--sm btn-outline--white">View More</a>
                 </div>
               </section>
             </div>
@@ -273,7 +350,6 @@
 
   <!-- prisim.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
 
 </body>
 
