@@ -12,10 +12,6 @@
   overflow: hidden;
   margin-bottom: $gutter;
 
-  @include media($small) {
-    margin-bottom: 0;
-  }
-
   .nav__item {
     @include standard-trans();
     display: block;
@@ -23,12 +19,30 @@
     padding: $space-sm $space-md;
     min-height: 50px;
     display: flex;
+    flex: 1;
     align-items: center;
     font-size: 14px;
     color: $base-font-color;
 
     &:hover {
       background-color: $black-05;
+    }
+  }
+
+  .dashboard-nav__toggle {
+    display: flex;
+
+    @include media($medium) {
+      display: none;
+    }
+  }
+
+  .dashboard-nav__items {
+    height: 0;
+    flex-direction: column;
+
+    @include media($medium) {
+      height: 1000px;
     }
   }
 
