@@ -4,7 +4,9 @@
   "description": "Gulpfile for the Apollo boilerplate",
   "main": "gulpfile.js",
   "scripts": {
-    "postinstall": "gulp"
+    "postinstall": "./node_modules/gulp/bin/gulp.js",
+    "build": "./node_modules/gulp/bin/gulp.js",
+    "build:production": "./node_modules/gulp/bin/gulp.js --production"
   },
   "repository": {
     "type": "git",
