@@ -134,3 +134,14 @@
     margin-bottom: $space-sm;
   }
 }
+
+
+// Primary / Secondary Button Classes
+
+.btn-outline--primary {
+  @extend .btn-outline--purple;
+}
+
+.btn-solid--secondary {
+  @extend .btn-solid--purple;
+}
