@@ -1,21 +1,21 @@
 {
-  "name": "apollo",
+  "name": "dc-pattern-lib",
   "version": "1.0.0",
-  "description": "Gulpfile for the Apollo boilerplate",
+  "description": "Gulpfile for the dc-pattern-lib boilerplate",
   "main": "gulpfile.js",
   "scripts": {
     "postinstall": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/j2made/apollo.git"
+    "url": "git+https://github.com/megumiteam/dc-pattern-lib.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/j2made/apollo/issues"
+    "url": "https://github.com/megumiteam/dc-pattern-lib/issues"
   },
-  "homepage": "https://github.com/j2made/apollo#readme",
+  "homepage": "https://github.com/megumiteam/dc-pattern-lib#readme",
   "devDependencies": {
     "babelify": "^7.2.0",
     "bourbon": "^4.2.6",
