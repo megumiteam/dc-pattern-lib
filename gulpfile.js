@@ -53,8 +53,8 @@ var dist_base = './dist/';
 var base = {
   'img':       enter + 'images/**/*',
   'fonts':     enter + 'fonts/**/*',
-  'sass':      enter + 'sass',
-  'sassMain':  enter + 'sass/main/*.scss',
+  'sass':      enter + 'semantic-ui-sass',
+  'sassMain':  enter + 'semantic-ui-sass/semantic-ui.scss',
   'js': {
     'single':  enter + 'js/single/*.js',
     'main':    enter + 'js/main.js',
