@@ -4,15 +4,8 @@
 
 // Logo
 .logo {
-
-  &--shifter {
-    height: 40px;
-    
-    svg {
-      height: 100%;
-      width: auto;
-    }
-  }
+  width: 120px;
+  display: inline-block;
 }
 
 ._gradient-purple {
@@ -30,11 +23,6 @@
 ._gradient-purple-dark {
   background-image: linear-gradient(90deg, transparent 0%, $black 100%);
   background-color: $purple-dark;
-}
-
-._gradient-purple-dark--reverse {
-  background-image: linear-gradient(90deg, transparent 0%, $purple-dark 100%);
-  background-color: $black;
 }
 
 ._gradient-purple-dark-40 {
@@ -104,10 +92,15 @@ $value in $theme-colors {
   }
 }
 
+// Nav
 .navbar {
 
   * {
     font-size: .85rem;
+  }
+
+  .navbar-collapse {
+    transform: translateY(14px);
   }
 
   .nav-link {
@@ -374,38 +367,7 @@ $value in $theme-colors {
   margin-top: -125px;
 }
 
-// Gutter Utility
-
-.mb-gutter {
-
-  &:not(:last-child) {
-    margin-bottom: $grid-gutter-width;
-  }
-}
-
 // Z Index Helpers
 .z-1 {
   z-index: 1;
-}
-
-// Custom Loading
-
-
-
-// Secondary Nav
-.secondary-nav {
-  @extend .pl-md-0;
-
-  .nav-item {
-    &:first-of-type {
-      .nav-link {
-        @extend .pl-md-0;
-      }
-    }
-  }
-}
-
-
-a.active {
-  color: orange
 }
