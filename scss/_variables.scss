@@ -122,19 +122,19 @@ $link-color:                $success !default;
 $link-hover-decoration:     none !default;
 
 // Grid breakpoints
-$grid-breakpoints: (
-  xs: 0,
-  sm: 711px,
-  md: 903px,
-  lg: 1227px,
-  xl: 1335px) !default;
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 711px,
+//   md: 903px,
+//   lg: 1227px,
+//   xl: 1335px) !default;
 
-// Grid containers
-$container-max-widths: (
-  sm: 675px,
-  md: 1095px,
-  lg: 1195px,
-  xl: 1375px) !default;
+// // Grid containers
+// $container-max-widths: (
+//   sm: 675px,
+//   md: 1095px,
+//   lg: 1195px,
+//   xl: 1375px) !default;
 
 // Fonts
 
@@ -228,7 +228,7 @@ $navbar-brand-padding-y : 0 !default;
 
 // Navbar
 $navbar-dark-color:                 $white !default;
-$navbar-dark-hover-color:            !default;
+$navbar-dark-hover-color:           $magenta !default;
 
 $navbar-light-color: rgba($purple, .7) !default;
 $navbar-light-hover-color: $purple-dark !default;

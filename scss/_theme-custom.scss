@@ -80,14 +80,13 @@ html {
   }
 }
 
-@each $color,
-$value in $theme-colors {
-  .btn-gradient-#{$color} {
-    color: $white;
-    @extend ._gradient-purple;
-    &:hover {
-      color: $gray-200;
-    }
+.btn-gradient-primary {
+  color: $white;
+  @extend ._gradient-purple;
+
+  @include hover-focus-active {
+    transition: background-image 2s ease-in-out;
+    color: darken($white, 5%) !important;
   }
 }
 
@@ -95,6 +94,7 @@ $value in $theme-colors {
 $value in $theme-colors {
   .btn-outline-#{$color} {
     box-shadow: inset 0px 0px 0px $btn-border-width $value;
+    @include button-outline-variant($value);
   }
 }
 
@@ -103,6 +103,7 @@ $value in $theme-colors {
     font-size: .85rem;
   }
   .nav-link {
+    transition: color .3s ease;
     font-weight: $font-weight-bold;
   }
   .nav-item,
@@ -112,8 +113,26 @@ $value in $theme-colors {
 }
 
 // Hero
-.hero__title {
-  margin-top: 130px;
+
+.hero {
+  // overflow: hidden;
+}
+
+.hero__graphic {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: -300px;
+
+  .icon-browsers {
+    width: 100% !important;
+
+    svg {
+      width: 100% !important;
+    }
+  }
 }
 
 // Section Angles
@@ -169,6 +188,7 @@ $value in $theme-colors {
 }
 
 .twitter-feed {
+
   .slick-slide {
     padding-right: 10px;
   }
@@ -202,6 +222,16 @@ $value in $theme-colors {
   font-size: 3rem;
   color: $magenta;
   z-index: 10;
+  position: absolute;
+  padding: 4rem;
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
 
   &:hover,
   &:focus,
@@ -298,6 +328,11 @@ $value in $theme-colors {
 // Accordian
 .accordian {
   cursor: pointer;
+
+  i.fa {
+    color: $magenta;
+    font-size: 2rem;
+  }
 }
 
 // Blog
@@ -389,8 +424,15 @@ $value in $theme-colors {
     height: auto !important;
     align-self: end;
   }
+  &-diamonds {
+    width: 58px !important;
+  }
   &-serverless {
-    width: 48px !important;
+    width: 45px !important;
+  }
+  &-checkbox,
+  &-checkbox-alt {
+    width: 55px !important;
   }
   &-cms {
     width: 60px !important;
@@ -406,13 +448,20 @@ $value in $theme-colors {
   }
   &-blog,
   &-blog-alt {
-    width: 69px !important;
+    width: 60px !important;
   }
   &-support {
     width: 63px !important;
   }
   &-globe {
     width: 63px !important;
+  }
+  &-lock,
+  &-lock-alt {
+    width: 50px !important;
+  }
+  &-aws {
+    width: 55px !important;
   }
   &-100 {
     width: 100% !important;
@@ -435,17 +484,8 @@ $value in $theme-colors {
 
 // Process
 .process {
-  // position: relative;
-  // overflow: hidden;
-  // &:after {
-  //   @extend .section-angle-base;
-  //   top: -50%;
-  //   background-color: $gray-100;
-  //   height: 100%;
-  //   z-index: 0;
-  // }
   .browser-mockup {
-    height: 400px;
+    height: 350px;
     overflow-y: hidden;
     z-index: 1;
   }
@@ -632,4 +672,40 @@ a.active {
     content: '';
     padding-top: 100%;
   }
+}
+
+// Footer
+
+.footer {
+  .footer__title {
+    font-weight: 600;
+    @extend .small;
+  }
+
+  .footer__links {
+    font-size: 14px;
+
+    a {
+      color: $purple-dark;
+    }
+  }
+}
+
+.btn-toggle {
+  .btn {
+    &.active,
+    &:focus {
+      @extend .btn-white;
+      color: $magenta !important;
+      // background-color: transparent !important;
+      box-shadow: inset 0px 0px 0px $btn-border-width $white !important;
+    }
+  }
+}
+
+// Feature Highlights
+
+.feature__highlight-icon {
+  width: 10%;
+  max-width: 70px;
 }
