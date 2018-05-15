@@ -7639,13 +7639,6 @@ a.text-gray-300:hover, a.text-gray-300:focus {
 * {
   -webkit-font-smoothing: antialiased; }
 
-html {
-  font-size: .8rem; }
-
-@media (min-width: 576px) {
-  html {
-    font-size: 1rem; } }
-
 .logo--shifter {
   height: 40px; }
   .logo--shifter svg {
@@ -8165,8 +8158,7 @@ html {
   font-size: 3rem;
   color: #f80759;
   z-index: 10;
-  position: absolute;
-  padding: 4rem; }
+  position: absolute; }
   .pricing-plans__control-item.left {
     left: 0; }
   .pricing-plans__control-item.right {
