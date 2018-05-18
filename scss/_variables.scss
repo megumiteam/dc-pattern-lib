@@ -6,7 +6,7 @@
 
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
-$gray-200: #ecf0f1 !default;
+$gray-200: #eeecee !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #b4bcc2 !default;
@@ -114,7 +114,7 @@ $spacers: map-merge((
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $black !default;
+$body-color:                $purple-dark !default;
 
 // Links
 
@@ -122,19 +122,19 @@ $link-color:                $success !default;
 $link-hover-decoration:     none !default;
 
 // Grid breakpoints
-$grid-breakpoints: (
-  xs: 0,
-  sm: 711px,
-  md: 903px,
-  lg: 1227px,
-  xl: 1335px) !default;
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 711px,
+//   md: 903px,
+//   lg: 1227px,
+//   xl: 1335px) !default;
 
-// Grid containers
-$container-max-widths: (
-  sm: 675px,
-  md: 855px,
-  lg: 1095px,
-  xl: 1275px) !default;
+// // Grid containers
+// $container-max-widths: (
+//   sm: 675px,
+//   md: 1095px,
+//   lg: 1195px,
+//   xl: 1375px) !default;
 
 // Fonts
 
@@ -143,7 +143,7 @@ $montserrat: 'Montserrat';
 $font-family-sans-serif:      $montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
 $font-size-base:              1.125rem !default;
-$line-height-base:            1.5 !default;
+$line-height-base:            1.7777777778 !default;
 
 $font-size-lg : ($font-size-base * 1.25) !default;
 $font-size-sm : ($font-size-base * .875) !default;
@@ -152,7 +152,7 @@ $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size :               $font-size-base * 2.1111111111 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.125 !default;
+$h5-font-size:                $font-size-base * 1.0625 !default;
 $h6-font-size:                $font-size-base !default;
 
 $font-weight-light:           200 !default;
@@ -189,6 +189,8 @@ $transition-collapse:         height .35s ease !default;
 // Tables
 
 $table-accent-bg:             $gray-200 !default;
+$table-hover-bg:              $gray-200 !default;
+$table-border-color:          transparent !default;
 
 // Dropdowns
 $dropdown-min-width: 10rem !default;
@@ -212,6 +214,12 @@ $nav-link-disabled-color:           $gray-600 !default !default;
 $navbar-nav-link-padding-x:         1.75rem !default;
 $nav-tabs-border-color:             $gray-200 !default;
 
+$navbar-toggler-border-radius:      0;
+$navbar-toggler-padding-x:          0;
+$navbar-toggler-padding-y:          0;
+$navbar-dark-toggler-border-color:  0;
+// $navbar-dark-toggler-icon-bg:       '';
+
 // Navbar Brand
 $navbar-brand-font-size : $font-size-lg !default;
 $nav-link-height : ($font-size-base * $line-height-base + $nav-link-padding-y * 2) !default;
@@ -220,7 +228,7 @@ $navbar-brand-padding-y : 0 !default;
 
 // Navbar
 $navbar-dark-color:                 $white !default;
-$navbar-dark-hover-color:            !default;
+$navbar-dark-hover-color:           $magenta !default;
 
 $navbar-light-color: rgba($purple, .7) !default;
 $navbar-light-hover-color: $purple-dark !default;
@@ -339,7 +347,7 @@ $input-btn-padding-x:         1.5rem !default;
 $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:       0 !default;
-$input-btn-focus-color:       rgba($component-active-bg, .25) !default;
+$input-btn-focus-color:       0 !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
 $input-btn-padding-y-sm:      .25rem !default;

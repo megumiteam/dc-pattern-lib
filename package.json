@@ -1,0 +1,20 @@
+{
+  "name": "dc-pattern-lib",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megumiteam/dc-pattern-lib.git"
+  },
+  "keywords": [],
+  "author": "Digitalcube <info@digitalcube.jp> (https://digitalcube.jp)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/megumiteam/dc-pattern-lib/issues"
+  },
+  "homepage": "https://github.com/megumiteam/dc-pattern-lib#readme"
+}
