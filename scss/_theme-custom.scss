@@ -2,17 +2,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-// Response Typography
-// html {
-//   font-size: .8rem;
-// }
-
-// @include media-breakpoint-up(sm) {
-//   html {
-//     font-size: 1rem;
-//   }
-// }
-
 // Logo
 .logo {
   &--shifter {
@@ -21,11 +10,15 @@
       height: 100%;
       width: auto;
     }
+    &-lg {
+      height: 70px;
+    }
   }
 }
 
 ._gradient-purple {
-  background-image: linear-gradient(90deg, $purple, $magenta);
+  background-image: linear-gradient(90deg, $purple, $magenta) !important;
+  background-color: $purple;
 }
 
 ._gradient-purple--reverse {
@@ -55,19 +48,6 @@
 //   background-image: linear-gradient(40deg, transparent 0%, $purple-dark 100%);
 //   background-color: $black;
 // }
-<<<<<<< HEAD
-
-.bg-fill {
- @extend ._gradient-purple-dark;
- position: absolute;
- height: 100vh;
- width: 100%;
- top: 0;
- left: 0;
-};
-
-=======
->>>>>>> 773fb4a10169fcf9fe6573563cc1e29a73821f7b
 .box-shadow {
   box-shadow: 0 .8rem 2rem 0 rgba(0, 0, 0, 0.2), 0 .1rem 9px 0 rgba(0, 0, 0, 0.06);
 }
@@ -96,9 +76,8 @@
 .btn-gradient-primary {
   color: $white;
   @extend ._gradient-purple;
-
   @include hover-focus-active {
-    transition: background-image 2s ease-in-out;
+    @extend ._gradient-purple--reverse;
     color: darken($white, 5%) !important;
   }
 }
@@ -106,8 +85,11 @@
 @each $color,
 $value in $theme-colors {
   .btn-outline-#{$color} {
-    box-shadow: inset 0px 0px 0px $btn-border-width $value;
     @include button-outline-variant($value);
+    box-shadow: inset 0px 0px 0px $btn-border-width $value;
+    @include hover-focus-active {
+      box-shadow: inset 0px 0px 0px $btn-border-width $value;
+    }
   }
 }
 
@@ -126,11 +108,6 @@ $value in $theme-colors {
 }
 
 // Hero
-
-.hero {
-  // overflow: hidden;
-}
-
 .hero__graphic {
   position: absolute;
   width: 100%;
@@ -138,10 +115,8 @@ $value in $theme-colors {
   left: 0;
   right: 0;
   margin-top: -300px;
-
   .icon-browsers {
     width: 100% !important;
-
     svg {
       width: 100% !important;
     }
@@ -201,14 +176,12 @@ $value in $theme-colors {
 }
 
 .twitter-feed {
-
   .slick-slide {
     padding-right: 10px;
   }
 }
 
 // Pricing
-
 .pricing-plans {
   overflow-x: hidden;
 }
@@ -235,17 +208,13 @@ $value in $theme-colors {
   font-size: 3rem;
   color: $magenta;
   z-index: 10;
-  position: absolute;
-  // padding: 1rem;
-
+  position: absolute; // padding: 1rem;
   &.left {
     left: 0;
   }
-
   &.right {
     right: 0;
   }
-
   &:hover,
   &:focus,
   &:active {
@@ -255,45 +224,35 @@ $value in $theme-colors {
 }
 
 .plans {
-
   .card-body {
     transition: all .2s linear;
   }
-
   &.slick-slider,
   .slick-list {
     overflow: visible;
   }
-
   .slick-track {
     display: flex;
     align-items: center;
   }
-
   .slick-slide {
     position: relative;
     transition: all .3s ease;
-
     .card-body {
       opacity: .25;
     }
   }
-
   .slick-active {
-
     .card-body {
       opacity: 1;
     }
   }
-
   .slick-current {
     z-index: 3;
     transform: scale(1.1);
-
-    + .slick-slide {
+    +.slick-slide {
       z-index: 1;
     }
-
     .plans__item-inner {
       position: relative;
     }
@@ -319,18 +278,15 @@ $value in $theme-colors {
 }
 
 .plans-table {
-
   td,
   thead th,
   tfoot td {
     text-align: center;
   }
-
   tfoot td,
   tfoot th {
     padding-top: 50px;
   }
-
   thead th {
     font-weight: $font-weight-bold;
     text-transform: uppercase;
@@ -341,7 +297,6 @@ $value in $theme-colors {
 // Accordian
 .accordian {
   cursor: pointer;
-
   i.fa {
     color: $magenta;
     font-size: 2rem;
@@ -357,7 +312,6 @@ $value in $theme-colors {
 }
 
 // Blog Post Archive List
-
 .post-content {
   padding: 2rem;
 }
@@ -367,7 +321,6 @@ $value in $theme-colors {
   flex-direction: row;
   width: 100%;
   position: relative;
-
   &:after {
     content: '';
     padding-top: 75%;
@@ -380,9 +333,7 @@ $value in $theme-colors {
   overflow: hidden;
   position: absolute;
   height: 100%;
-  width: 100%;
-
-  // width: 100%;
+  width: 100%; // width: 100%;
   // height: 100%;
   // object-fit: cover;
 }
@@ -412,11 +363,9 @@ $value in $theme-colors {
   // transform: translateY(-20rem);
   margin-top: -20rem;
   padding-bottom: 5rem;
-
   p {
     margin-bottom: 1.5rem;
   }
-
   img {
     @extend .img-fluid;
     border-radius: $border-radius-sm;
@@ -427,11 +376,9 @@ $value in $theme-colors {
 .icon {
   display: inline-flex;
   width: 50px !important;
-
   &-sm {
     transform: scale(.75);
   }
-
   svg {
     width: 100% !important;
     height: auto !important;
@@ -523,7 +470,6 @@ $value in $theme-colors {
       margin-bottom: $grid-gutter-width;
     }
   }
-
   &-sm {
     @include media-breakpoint-down(sm) {
       >* {
@@ -533,7 +479,6 @@ $value in $theme-colors {
       }
     }
   }
-
   &-md {
     @include media-breakpoint-down(md) {
       >* {
@@ -585,34 +530,29 @@ a.active {
 }
 
 // Mobile Nav
-
 .nav-mobile {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 9999;
-
   .nav-item {
     margin-bottom: .5rem;
   }
-
   .navbar-collapse {
     border-radius: $border-radius;
     padding: 2.5rem 2rem 2rem;
     margin: 1rem;
     background-color: $white;
     visibility: hidden;
-    transition: all .3s cubic-bezier(.8, -.4, .2, 1.44) 0s,
-    opacity .3s cubic-bezier(.8, -.4, .2, 1.44) 0s;
+    transition: all .3s cubic-bezier(.8, -.4, .2, 1.44) 0s, opacity .3s cubic-bezier(.8, -.4, .2, 1.44) 0s;
     transform: scale(0);
     position: absolute;
-    top: 0; 
+    top: 0;
     right: 0;
     display: inline-flex;
     flex-direction: column;
     text-align: center;
     @extend .box-shadow-sm;
-
     .nav-mobile-toggle {
       position: absolute;
       top: 1rem;
@@ -621,7 +561,6 @@ a.active {
       margin: 0;
       color: $purple-dark;
     }
-
     &.show {
       visibility: visible;
       opacity: 1;
@@ -641,15 +580,12 @@ a.active {
   flex: 1 1 auto;
 }
 
-
 // Social Media List
-
 .socia-list {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
   @include media-breakpoint-up(md) {
     flex-direction: column;
   }
@@ -668,19 +604,15 @@ a.active {
   margin-bottom: $grid-gutter-width / 2;
   color: $black;
   transition: all ease .2s;
-
   &:not(:last-child) {
     margin-right: $grid-gutter-width / 2
   }
-
   @include media-breakpoint-up(md) {
     margin-bottom: $grid-gutter-width / 2;
-
     &:not(:last-child) {
       margin-right: 0;
     }
   }
-
   &:before {
     content: '';
     padding-top: 100%;
@@ -688,16 +620,13 @@ a.active {
 }
 
 // Footer
-
 .footer {
   .footer__title {
     font-weight: 600;
     @extend .small;
   }
-
   .footer__links {
     font-size: 14px;
-
     a {
       color: $purple-dark;
     }
@@ -709,16 +638,19 @@ a.active {
     &.active,
     &:focus {
       @extend .btn-white;
-      color: $magenta !important;
-      // background-color: transparent !important;
+      color: $magenta !important; // background-color: transparent !important;
       box-shadow: inset 0px 0px 0px $btn-border-width $white !important;
     }
   }
 }
 
 // Feature Highlights
-
 .feature__highlight-icon {
   width: 10%;
   max-width: 70px;
+}
+
+// HR Text Divider
+.login-form {
+  max-width: 500px;
 }

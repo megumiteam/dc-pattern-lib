@@ -7,7 +7,7 @@
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #eeecee !default;
-$gray-300: #dee2e6 !default;
+$gray-300: #F6F7FB !default;
 $gray-400: #ced4da !default;
 $gray-500: #b4bcc2 !default;
 $gray-600: #95a5a6 !default;
@@ -359,6 +359,9 @@ $input-btn-padding-x-lg:      2rem !default;
 $input-btn-line-height-lg:    $line-height-lg !default;
 
 $input-btn-border-width:      $border-width !default;
+
+
+$input-group-addon-bg:                  transparent !default;
 
 
 // Buttons
