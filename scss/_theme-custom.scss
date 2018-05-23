@@ -62,6 +62,11 @@
   @include button-size( $btn-padding-y, $btn-padding-x, .95rem, $btn-line-height, $btn-border-radius);
 }
 
+.btn-sm {
+  border-width: 0;
+  @include button-size( $btn-padding-y-sm, $btn-padding-x-sm, .85rem, $btn-line-height, $btn-border-radius);
+}
+
 .btn-lg {
   @include button-size( $btn-padding-y-lg, $btn-padding-x-lg, .95rem, $btn-line-height-lg, $btn-border-radius);
 }
@@ -457,7 +462,7 @@ $value in $theme-colors {
   margin-top: -125px;
 }
 
-// Column Gutter Utility
+// Column and Row Gutter Utilites
 .mb-gutter {
   &:not(:last-child) {
     margin-bottom: $grid-gutter-width;
@@ -486,6 +491,14 @@ $value in $theme-colors {
           margin-bottom: $grid-gutter-width;
         }
       }
+    }
+  }
+}
+
+.border-bottom-row {
+  >* {
+    &:not(:last-child) {
+      @extend .border-bottom;
     }
   }
 }
