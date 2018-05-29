@@ -7929,7 +7929,7 @@ a.text-gray-300:hover, a.text-gray-300:focus {
   box-shadow: 0 0.8rem 2rem 0 rgba(0, 0, 0, 0.2), 0 0.1rem 9px 0 rgba(0, 0, 0, 0.06); }
 
 .box-shadow-sm, .nav-mobile .navbar-collapse {
-  box-shadow: 0 0 10px 0 rgba(183, 183, 183, 0.5); }
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.06); }
 
 .btn {
   border-width: 0;
