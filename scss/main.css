@@ -8739,6 +8739,20 @@ a.active {
 .login-form {
   max-width: 500px; }
 
+.btn-progress {
+  position: relative; }
+  .btn-progress .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0; }
+
+.btn-progress__label {
+  z-index: 1;
+  position: relative; }
+
 .shifter--main .navbar-brand {
   transform: translateY(-16px); }
 
