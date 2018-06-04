@@ -7926,10 +7926,10 @@ a.text-gray-300:hover, a.text-gray-300:focus {
   background-color: #451D39; }
 
 .box-shadow, .browser-mockup {
-  box-shadow: 0 0.8rem 2rem 0 rgba(0, 0, 0, 0.2), 0 0.1rem 9px 0 rgba(0, 0, 0, 0.06); }
+  box-shadow: 0 0.8rem 2rem 0 rgba(50, 50, 93, 0.1), 0 0.1rem 9px 0 rgba(0, 0, 0, 0.07); }
 
 .box-shadow-sm, .nav-mobile .navbar-collapse {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.06); }
+  box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07); }
 
 .btn {
   border-width: 0;
@@ -8752,6 +8752,15 @@ a.active {
 .btn-progress__label {
   z-index: 1;
   position: relative; }
+
+.striped > *:nth-of-type(odd) {
+  background: #f8f9fa; }
+
+.striped > *:nth-of-type(even) {
+  background: #eeecee; }
+
+.list-group.striped .list-group-item {
+  border-color: transparent; }
 
 .shifter--main .navbar-brand {
   transform: translateY(-16px); }

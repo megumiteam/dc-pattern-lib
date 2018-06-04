@@ -49,11 +49,11 @@
 //   background-color: $black;
 // }
 .box-shadow {
-  box-shadow: 0 .8rem 2rem 0 rgba(0, 0, 0, 0.2), 0 .1rem 9px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 .8rem 2rem 0 rgba(50,50,93,.1), 0 .1rem 9px 0 rgba(0,0,0,.07);
 }
 
 .box-shadow-sm {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
 }
 
 // Buttons
@@ -685,4 +685,24 @@ a.active {
 .btn-progress__label {
   z-index: 1;
   position: relative;
+}
+
+// Striped Rows
+.striped {
+
+  > * {
+    &:nth-of-type(odd) {
+      background: $gray-100;
+    }
+
+    &:nth-of-type(even) {
+      background: $gray-200;
+    }
+  }
+}
+
+.list-group.striped {
+  .list-group-item {
+    border-color: transparent;
+  }
 }
