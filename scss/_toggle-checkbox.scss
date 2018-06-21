@@ -22,7 +22,7 @@ $switch-transition: .2s all !default;
   position: relative;
 
   input {
-    position: absolute;
+    position: absolute !important;
     height: 1px;
     width: 1px;
     background: none;

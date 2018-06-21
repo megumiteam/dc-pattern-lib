@@ -7896,7 +7896,7 @@ a.text-gray-300:hover, a.text-gray-300:focus {
   font-size: 1.125rem;
   position: relative; }
   .switch input {
-    position: absolute;
+    position: absolute !important;
     height: 1px;
     width: 1px;
     background: none;
