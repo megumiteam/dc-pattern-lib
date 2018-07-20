@@ -38,7 +38,7 @@ $green:   #18BC9C !default;
 $teal:    #20c997 !default;
 $cyan:    #3498DB !default;
 
-$primary:       $purple !default;
+$primary:       $green !default;
 $secondary:     $purple-dark !default;
 $success:       $purple !default;
 $info:          $purple-dark !default;
@@ -138,28 +138,13 @@ $body-color:                $purple-dark !default;
 $link-color:                $success !default;
 $link-hover-decoration:     none !default;
 
-// Grid breakpoints
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 711px,
-//   md: 903px,
-//   lg: 1227px,
-//   xl: 1335px) !default;
-
-// // Grid containers
-// $container-max-widths: (
-//   sm: 675px,
-//   md: 1095px,
-//   lg: 1195px,
-//   xl: 1375px) !default;
-
 // Fonts
 
 $montserrat: 'Montserrat';
 
 $font-family-sans-serif:      $montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
-$font-size-base:              1.125rem !default;
+$font-size-base:              1rem !default;
 $line-height-base:            1.7777777778 !default;
 
 $font-size-lg : ($font-size-base * 1.25) !default;
@@ -169,7 +154,7 @@ $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size :               $font-size-base * 2.1111111111 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.0625 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
 $font-weight-light:           200 !default;
