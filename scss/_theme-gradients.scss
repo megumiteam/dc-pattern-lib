@@ -1,27 +1,14 @@
 // Theme
+._gradient-primary {
+  background-image: linear-gradient(90deg, $primary, $secondary) !important;
+  background-color: $primary;
 
-@if $ui-theme == "shifter" {
-  ._gradient-primary {
-    background-image: linear-gradient(90deg, $purple, $magenta) !important;
-    background-color: $primary;
-  
-    &--reverse {
-      background-image: linear-gradient(90deg, $magenta, $purple);
-    }
-  }
-} @else {
-  ._gradient-primary {
-    background-image: linear-gradient(90deg, $primary, $secondary) !important;
-    background-color: $primary;
-  
-    &--reverse {
-      background-image: linear-gradient(90deg, $secondary, $primary);
-    }
+  &--reverse {
+    background-image: linear-gradient(90deg, $secondary, $primary);
   }
 }
 
 // Purples
-
 ._gradient-purple {
   background-image: linear-gradient(90deg, $purple, $magenta) !important;
   background-color: $purple;

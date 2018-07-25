@@ -8020,7 +8020,7 @@ a.text-gray-300:hover, a.text-gray-300:focus {
   .logo--shifter-lg {
     height: 70px; }
 
-._gradient-purple {
+._gradient-purple, .btn-gradient-purple {
   background-image: linear-gradient(90deg, #bc4e9c, #f80759) !important;
   background-color: #bc4e9c; }
 
@@ -8075,6 +8075,11 @@ a.text-gray-300:hover, a.text-gray-300:focus {
 .btn-gradient-primary {
   color: #fff; }
   .btn-gradient-primary:hover, .btn-gradient-primary:focus, .btn-gradient-primary:active {
+    color: #f2f2f2 !important; }
+
+.btn-gradient-purple {
+  color: #fff; }
+  .btn-gradient-purple:hover, .btn-gradient-purple:focus, .btn-gradient-purple:active {
     color: #f2f2f2 !important; }
 
 .btn-outline-primary {
@@ -8882,10 +8887,10 @@ a.active {
 ._gradient-primary, .btn-gradient-primary {
   background-image: linear-gradient(90deg, #18BC9C, #451D39) !important;
   background-color: #18BC9C; }
-  ._gradient-primary--reverse, .btn-gradient-primary:hover, .btn-gradient-primary:focus, .btn-gradient-primary:active {
+  ._gradient-primary--reverse, .btn-gradient-primary:hover, .btn-gradient-primary:focus, .btn-gradient-primary:active, .btn-gradient-purple:hover, .btn-gradient-purple:focus, .btn-gradient-purple:active {
     background-image: linear-gradient(90deg, #451D39, #18BC9C); }
 
-._gradient-purple {
+._gradient-purple, .btn-gradient-purple {
   background-image: linear-gradient(90deg, #bc4e9c, #f80759) !important;
   background-color: #bc4e9c; }
 

@@ -83,6 +83,15 @@
   }
 }
 
+.btn-gradient-purple {
+  color: $white;
+  @extend ._gradient-purple;
+  @include hover-focus-active {
+    @extend ._gradient-primary--reverse;
+    color: darken($white, 5%) !important;
+  }
+}
+
 @each $color,
 $value in $theme-colors {
   .btn-outline-#{$color} {
