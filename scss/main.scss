@@ -41,10 +41,15 @@
   }
 }
 
+// .card-footer {
+//   padding-top: $card-spacer-y / 2;
+// }
+
 /**
  * Theme Gradients
  */
 $theme-gradients: (
+  ("primary", $purple, $magenta, $white),
   ("magenta", $purple, $magenta, $white),
   ("purple-dark", $purple-dark, $black, $white),
   ("green", $green, $teal, $white),
@@ -110,4 +115,11 @@ $theme-gradients: (
       background: $gray-100;
     }
   }
+}
+
+/**
+ * UI Helpers
+ */
+.clickable {
+  cursor: pointer;
 }

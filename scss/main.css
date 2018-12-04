@@ -6804,6 +6804,19 @@ a.text-green:hover, a.text-green:focus {
 /**
  * Theme Gradients
  */
+.btn-gradient-primary {
+  color: #fff;
+  background: linear-gradient(to right, #bc519e, #f80759);
+  background-size: 120%;
+  background-position: 20%; }
+  .btn-gradient-primary:hover {
+    color: #fff;
+    text-decoration: none;
+    opacity: 90%; }
+
+.bg-gradient-primary {
+  background: linear-gradient(to right, #bc519e, #f80759); }
+
 .btn-gradient-magenta {
   color: #fff;
   background: linear-gradient(to right, #bc519e, #f80759);
@@ -6886,4 +6899,8 @@ a.text-green:hover, a.text-green:focus {
   .list-striped .list-group-item:nth-of-type(even) {
     background: #f8f9fa; }
 
-/*# sourceMappingURL=main.css.map */
+/**
+ * UI Helpers
+ */
+.clickable {
+  cursor: pointer; }
